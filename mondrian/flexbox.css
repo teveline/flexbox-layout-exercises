@@ -1,0 +1,12 @@
+/* use flexbox numbers, ex."flex: 2" to size the boxes
+rather than px or % to size each of the boxes.
+
+Your strategy is to continuously break each section
+down into smaller sections. Do not start from the column
+on the left because it is the hardest one. It has a 
+tricky layout. The second column is probably the easiest.
+*/
+
+.container {
+    border: 10px solid gray
+}
