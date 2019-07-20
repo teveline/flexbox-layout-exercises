@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 480px;
+    height: 480px
+}
+
+/* .rows {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+} */
+
+.color1 {
+    background: turquoise;
+    width: 60px;
+    height: 60px;
+}
+
+.color2 {
+    background: navy;
+    width: 60px;
+    height: 60px;   
+}
