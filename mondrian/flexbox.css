@@ -6,7 +6,40 @@ down into smaller sections. Do not start from the column
 on the left because it is the hardest one. It has a 
 tricky layout. The second column is probably the easiest.
 */
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%
+}
 
-.container {
-    border: 10px solid gray
+.frame {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    height: 80vh;
+    border: 2px solid black;
+}
+.section {
+    flex: 1;
+    border: 2px solid gray;
+    
+}
+
+.first.section {
+    background: pink;
+    flex: 1;
+}
+
+.second.section {
+    background: yellow;
+    flex: 1;
+    display: flex;
+}
+
+.third.section {
+    background: lightblue;
+    flex: 1;
 }
