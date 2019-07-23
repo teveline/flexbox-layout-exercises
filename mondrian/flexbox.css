@@ -20,7 +20,7 @@ tricky layout. The second column is probably the easiest.
     justify-content: center;
     width: 80vw;
     height: 85vh;
-    border: 4px solid black;
+    border: 2px solid black;
 }
 .section {
     flex: 1;
@@ -119,8 +119,97 @@ tricky layout. The second column is probably the easiest.
     background: black;
 }
 
-/* Third Section */
+/* Third Top Section */
 .third.section {
     background: white;
     flex: 1;
+    display:flex;
+    flex-direction: column;
+}
+.third.very.top.section {
+    background: white;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+.third.very.top.left.section{
+    flex: 6;
+}
+.third.very.top.left.section.s1 {
+    flex: 1;
+    background: yellow;
+}
+.third.very.top.left.section.s2 {
+    background: black;
+    flex: 1;
+}
+.third.very.top.section.right {
+    background: white;
+    flex: 10;
+}
+
+/* Third Middle left Section */
+.third.middle.section {
+    background: white;
+    flex: 8;
+    flex-direction: row;
+}
+.third.middle.left.section {
+    background: white;
+    flex: 3;
+    flex-direction: column;
+}
+.third.middle.left.top.section {
+    flex-direction: row;
+}
+.third.middle.left.top.section.up.s1 {
+    background:yellow;
+}
+.third.middle.left.top.section.up.s2 {
+    background:black;
+}
+.third.middle.left.top.section.west {
+    flex-direction: column;
+}
+.third.middle.left.top.section.east {
+    flex-direction: column;
+}
+.third.middle.left.top.section.east.down {
+    background: black;
+}
+.third.middle.left.bottom.section {
+    background: blue;
+}
+
+/* Third Middle Right section */
+.third.middle.right.section {
+    background: white;
+    flex: 1;
+    flex-direction: column;
+}
+.third.middle.right.section.s1 {
+    background: yellow;
+    flex: 3;
+}
+.third.middle.right.section.s2 {
+    background: white;
+    flex: 3;
+}
+.third.middle.right.section.s3 {
+    background: white;
+    flex: 1;
+}
+/* Third Bottom Section */
+.third.very.bottom.section {
+    background: white;
+    flex: 1;
+    flex-direction: row;
+}
+.third.very.bottom.section.left {
+    background: white;
+    flex: 10;
+}
+.third.very.bottom.section.right {
+    background: white;
+    flex: 6;
 }
