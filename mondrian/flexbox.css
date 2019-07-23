@@ -13,6 +13,7 @@ tricky layout. The second column is probably the easiest.
     width: 100vw;
     height: 100vh;
     background: black;
+    margin: 0 auto;
 }
 /* check out chessboard to findout why background doesn't
 change and the painting won't center */
@@ -26,12 +27,44 @@ change and the painting won't center */
 }
 .section {
     flex: 1;
-    border: 2px solid dimgray;
+    border: 1px solid black;
 }
 /* First Section*/
 .first.section {
     background: white;
     flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.first.section.top {
+    background: white;
+    flex: 1;
+    flex-direction: row;
+}
+.first.section.top.left {
+    background: white;
+    flex: 6;
+}
+.first.section.top.right {
+    background: white;
+    flex: 10;
+}
+.first.section.bottom {
+    background: white;
+    flex: 9;
+    display: flex;
+    flex-direction: row;
+}
+.first.section.bottom.left {
+    background: white;
+    flex: 1;
+
+   
+}
+.first.section.bottom.right {
+    background: white;
+    flex: 3;
+
 }
 
 /* Second Section Top*/
