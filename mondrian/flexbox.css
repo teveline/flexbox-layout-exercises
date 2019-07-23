@@ -12,8 +12,10 @@ tricky layout. The second column is probably the easiest.
     align-items: center;
     width: 100vw;
     height: 100vh;
+    background: black;
 }
-
+/* check out chessboard to findout why background doesn't
+change and the painting won't center */
 .frame {
     display: flex;
     flex-direction: row;
