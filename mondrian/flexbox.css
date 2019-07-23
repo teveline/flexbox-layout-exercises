@@ -10,36 +10,117 @@ tricky layout. The second column is probably the easiest.
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%
+    width: 100vw;
+    height: 100vh;
 }
 
 .frame {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 90%;
-    height: 80vh;
-    border: 2px solid black;
+    width: 80vw;
+    height: 85vh;
+    border: 4px solid black;
 }
 .section {
     flex: 1;
-    border: 2px solid gray;
-    
+    border: 2px solid dimgray;
 }
-
+/* First Section*/
 .first.section {
-    background: pink;
+    background: white;
     flex: 1;
 }
 
+/* Second Section Top*/
 .second.section {
-    background: yellow;
+    background: white;
     flex: 1;
     display: flex;
+    flex-direction: column;
+}
+.top.second.section {
+    display: flex;
+    flex-direction: row;
 }
 
+.top.second.right.section {
+    display: flex;
+    flex-direction: column;
+}
+.top.second.right.section.one {
+    background: blue;
+    flex: 2;
+}
+.top.second.right.section.two {
+    background: red;
+    flex: 2;
+}
+.top.second.right.section.three {
+    flex: 1;
+}
+
+.top.second.left.section {
+    display: flex;
+    flex-direction: column;
+}
+.top.second.left.section.one {
+    flex: 1;
+    background: yellow;
+}
+.top.second.left.section.two {
+    flex: 2;
+    background: yellow;
+}
+.top.second.left.section.three {
+    flex: 2;
+    background: white;
+    flex-direction: row;
+}
+
+
+/* Second Section Bottom */
+.bottom.second.section {
+    display: flex;
+    flex-direction: row;
+}
+.bottom.second.section.left {
+    flex-direction: column;
+}
+.bottom.second.section.left.one {
+    flex: 1;
+}
+.bottom.second.section.left.two {
+    flex: 2;
+    background: blue;
+}
+.bottom.second.section.left.three {
+    flex: 2;
+    background: red;
+}
+.bottom.second.section.right {
+    flex-direction: column;
+}
+.bottom.second.section.right.one {
+    flex: 2;
+    flex-direction: row;
+}
+
+.bottom.second.section.right.two {
+    flex: 2;
+    background: yellow;
+}
+.bottom.second.section.right.three {
+    flex: 1;
+    flex-direction: row;
+}
+.bottom.second.section.right.three.east {
+    flex: 1;
+    background: black;
+}
+
+/* Third Section */
 .third.section {
-    background: lightblue;
+    background: white;
     flex: 1;
 }
