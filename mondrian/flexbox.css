@@ -7,11 +7,11 @@ on the left because it is the hardest one. It has a
 tricky layout. The second column is probably the easiest.
 */
 .body {
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
     background: black;
     margin: 0 auto;
 }
@@ -29,42 +29,131 @@ change and the painting won't center */
     flex: 1;
     border: 1px solid black;
 }
-/* First Section*/
+/* First Section */
 .first.section {
     background: white;
     flex: 1;
     display: flex;
     flex-direction: column;
 }
-.first.section.top {
+.top.first.section {
     background: white;
     flex: 1;
     flex-direction: row;
 }
-.first.section.top.left {
+.top.first.section.left {
     background: white;
     flex: 6;
+    flex-direction: row;
 }
-.first.section.top.right {
+.top.first.section.right {
     background: white;
     flex: 10;
 }
+
+/* First Section Bottom */
 .first.section.bottom {
     background: white;
     flex: 9;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
-.first.section.bottom.left {
+.first.section.bottom.up {
+    background: white;
+    flex: 4;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 20px;
+}
+.first.section.bottom.up.left {
     background: white;
     flex: 1;
-
-   
+    flex-direction: column;
 }
-.first.section.bottom.right {
+.first.section.bottom.up.left.s1 {
     background: white;
+    flex: 1;
+}
+.first.section.bottom.up.left.s2 {
+    background: white;
+    flex: 1;
+    background: white;
+    border-bottom: 0px;
+}
+.first.section.bottom.up.right {
     flex: 3;
+    background: red;
+    border:
+}
+.first.section.bottom.down {
+    background: white;
+    flex: 5;
 
+}
+
+.first.bottom.section.down {
+    flex-direction: row;
+    border-top: 0px;
+}
+.first.bottom.section.down.left {
+    flex: 3;
+    flex-direction: column;
+}
+.first.bottom.section.down.left.a1 {
+    flex: 4;
+    flex-direction: row;
+}
+.first.bottom.section.down.left.a1.b1 {
+    flex: 15;                       /* may need readjustment */
+    flex-direction: column;
+}
+.first.bottom.section.down.left.a1.b1.c1 {
+    flex: 1;
+    border-top: 0px;
+    border-left: 0px;
+    background: white;
+}
+.first.bottom.section.down.left.a1.b1.c2 {
+    background: yellow;
+    flex: 3;
+}
+.first.bottom.section.down.left.a1.b2 {
+    flex-direction: column;  /* may need readjustment */
+    flex: 20;
+}
+.first.bottom.section.down.left.a1.b2.c1 {
+    background: black;   
+    flex: 1;
+}
+.first.bottom.section.down.left.a1.b2.c2 {   
+    flex: 1;
+}
+.first.bottom.section.down.left.a2 {
+    flex: 1;
+}
+.first.bottom.section.down.right {
+    flex: 2;
+    flex-direction: column;
+}
+.first.bottom.section.down.right.s1 {  
+    flex: 1;
+    flex-direction: column;
+}
+.first.bottom.section.down.right.s2 {
+    flex: 1;
+    flex-direction: column;
+}
+.first.bottom.section.down.right.s3 {
+    background: black;
+    flex: 1;
+    flex-direction: column;
+}
+.first.bottom.section.down.right.s4 {
+    flex: 2;
+    flex-direction: row;
+}
+.first.bottom.section.down.right.s4.one {
+    background: yellow;
 }
 
 /* Second Section Top*/
